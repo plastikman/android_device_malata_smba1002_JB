@@ -1,0 +1,16 @@
+Copy to android/device/malata/smba1002/
+
+run extract-files.sh or copy-files.sh that'll create your vendor directory
+
+go back to source root
+
+Shell Type: ". build/envsetup.sh"
+
+Let it finish.
+
+Shell Type: "lunch full_smba1002-userdebug"
+
+Wait for it to get done.
+
+Then type: "time make otapackage -j16" (replace 16 with whatever your machine can handle.)
+
