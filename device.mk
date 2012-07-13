@@ -37,7 +37,11 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_COPY_FILES := \
     $(LOCAL_KERNEL):kernel \
     device/malata/smba1002/files/init.harmony.rc:root/init.harmony.rc \
+    device/malata/smba1002/files/init.harmony.usb.rc:root/init.harmony.usb.rc \
     device/malata/smba1002/files/ueventd.harmony.rc:root/ueventd.harmony.rc \
+    device/malata/smba1002/files/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+    device/malata/smba1002/files/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
+    device/malata/smba1002/files/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
     device/malata/smba1002/files/nvram.txt:system/etc/wifi/nvram.txt
 
 # Modules
@@ -55,6 +59,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_COPY_FILES += \
     device/malata/smba1002/files/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
+
 	
 # Touchscreen
 PRODUCT_COPY_FILES += \
