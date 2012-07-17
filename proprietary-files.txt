@@ -63,3 +63,6 @@ etc/firmware/nvmm_service.axf
 etc/firmware/nvmm_sorensondec.axf		 	 
 etc/firmware/nvmm_wavdec.axf 		 	 
 etc/firmware/nvrm_avp.bin
+# Media files (stolen from Skyrocket)
+lib/libwvm.so
+lib/libWVStreamControlAPI_L3.so
