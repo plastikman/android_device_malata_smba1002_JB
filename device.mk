@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     device/malata/smba1002/files/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
 	
+# Audio
+PRODUCT_COPY_FILES += \
+    device/malata/smba1002/audio/audio_policy.conf:system/etc/audio_policy.conf
+
 # Touchscreen
 PRODUCT_COPY_FILES += \
     device/malata/smba1002/files/at168_touch.idc:system/usr/idc/at168_touch.idc 
