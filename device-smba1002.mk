@@ -26,7 +26,7 @@
 #endif
 
 # Install smba1002 kernel modules from prebuilt
-#$(call inherit-product, device/malata/smba1002/smba1002-modules.mk)
+$(call inherit-product, device/malata/smba1002/smba1002-modules.mk)
 
 #DEVICE_PACKAGE_OVERLAYS := device/malata/smba1002/overlay
 
