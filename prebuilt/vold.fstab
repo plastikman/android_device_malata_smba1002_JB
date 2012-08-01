@@ -12,5 +12,5 @@
 # vold not needed in JB anymore?? grouper is empty...
 # Configuration of SMBA1002
 dev_mount sdcard0 /storage/sdcard0 auto /devices/platform/sdhci-tegra.3/mmc_host/mmc1
-dev_mount sdcard1 /starage/sdcard1 auto /devices/platform/sdhci-tegra.2/mmc_host/mmc2
+dev_mount sdcard1 /storage/sdcard1 auto /devices/platform/sdhci-tegra.2/mmc_host/mmc2
 dev_mount usbdrive /mnt/usbdrive auto /devices/platform/tegra-ehci.2
