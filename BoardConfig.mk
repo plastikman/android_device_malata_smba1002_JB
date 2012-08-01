@@ -36,10 +36,9 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 #TARGET_KERNEL_CONFIG        := tegra_smba1002_defconfig
 #TARGET_KERNEL_SOURCE        := kernel/malata/smba1002
 
-BOARD_KERNEL_CMDLINE := mem=448M@0M nvmem=64M@448M vmalloc=192M video=tegrafb console=ttyS0,115200n8 usbcore.old_scheme_first=1 cpuid=200102 devicetype=1002 bspversion=0202100907 btmac=9c5ed6131a00 tegraboot=nand mtdparts=tegra_nand:16384K@12032K(misc),16384K@62208K(recovery),16384K@79104K(boot),253696K@96000K(system),173312K@350464K(cache),4096K@7424K(bootbmp),32768K@28928K(logodata)
+#BOARD_KERNEL_CMDLINE := mem=448M@0M nvmem=64M@448M vmalloc=192M video=tegrafb console=ttyS0,115200n8 usbcore.old_scheme_first=1 cpuid=200102 devicetype=1002 bspversion=0202100907 btmac=9c5ed6131a00 tegraboot=nand mtdparts=tegra_nand:16384K@12032K(misc),16384K@62208K(recovery),16384K@79104K(boot),253696K@96000K(system),173312K@350464K(cache),4096K@7424K(bootbmp),32768K@28928K(logodata)
 #BOARD_KERNEL_CMDLINE := mem=448M@0M nvmem=64M@448M vmalloc=192M video=tegrafb console=ttyS0,115200n8 usbcore.old_scheme_first=1
 
-TARGET_PREBUILT_KERNEL := device/malata/smba1002/prebuilt/kernel
 
 TARGET_OTA_ASSERT_DEVICE := harmony,smba1002
 
@@ -60,3 +59,6 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := false
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_USERIMAGES_USE_EXT4 := false
+
+BOARD_SDCARD_INTERNAL_DEVICE    := /dev/block/mmcblk0p2
+TARGET_PROVIDES_INIT_RC := true

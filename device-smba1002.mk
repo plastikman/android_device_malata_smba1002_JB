@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL tuna devices, and
-# are also specific to tuna devices
-#
 # Everything in this directory will become public
 
 #ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -36,9 +33,16 @@ TARGET_BOOTANIMATION_NAME := horizontal-1280x800
 PRODUCT_COPY_FILES += \
     device/malata/smba1002/prebuilt/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
-	
+PRODUCT_COPY_FILES += \
+    device/malata/smba1002/prebuilt/fstab.harmony:root/fstab.harmony \
+    device/malata/smba1002/prebuilt/init.rc:root/init.rc \
+    device/malata/smba1002/prebuilt/vold.fstab:system/etc/vold.fstab
+
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.sf.lcd_density=120 
+    ro.sf.lcd_density=120 \
+    ro.build.description=tervigon-user 4.1.1 JRO03H 405518 release-keys \
+    ro.build.fingerprint=motorola/tervigon/wingray:4.1.1/JRO03H/405518:user/release-keys
+
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
